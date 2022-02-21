@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/navigation_home"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.wang.kotlinapp.biz.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home"
+        />
+
+    <fragment
+        android:id="@+id/navigation_collect"
+        android:name="com.wang.kotlinapp.biz.collect.CollectFragment"
+        android:label="@string/title_collect"
+        tools:layout="@layout/fragment_collect"
+        />
+
+    <fragment
+        android:id="@+id/navigation_personal"
+        android:name="com.wang.kotlinapp.biz.person.PersonFragment"
+        android:label="@string/title_personal"
+        tools:layout="@layout/fragment_personal"
+        />
+
+</navigation>
